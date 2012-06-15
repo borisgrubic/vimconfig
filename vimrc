@@ -1,3 +1,6 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim (usually just
 " /usr/share/vim/vimcurrent/debian.vim) and sourced by the call to :runtime
 " you can find below.  If you wish to change any of those settings, you should
@@ -75,7 +78,7 @@ set splitright " split new vertical right
 set foldmethod=indent " set folding on
 
 set t_Co=256
-colors jellybeans
+"colors jellybeans
 
 " ----- LaTeX -----
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
