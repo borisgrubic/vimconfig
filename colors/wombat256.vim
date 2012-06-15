@@ -1,0 +1,1 @@
+/home/boris/.vim/colors/wombat/colors/wombat256.vim
