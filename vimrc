@@ -81,6 +81,8 @@ set foldmethod=indent " set folding on
 set t_Co=256
 colors jellybeans
 
+let g:CommandTTagIncludeFilenames=1
+
 " ----- LaTeX -----
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
