@@ -66,12 +66,16 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+set wildmode=longest,list,full
+set wildmenu
+
 set ruler " show cursor position
 
 set nobackup
 set noswapfile
 
 nmap <silent> <F3> :NERDTreeToggle<CR>
+nnoremap <silent> <F4> :TlistToggle<CR>
 
 imap jj <ESC>
 nmap <silent> ,/ :nohlsearch<CR>
@@ -92,8 +96,9 @@ set t_Co=256
 colors jellybeans
 
 let mapleader=","
-let g:EasyMotion_leader_key="<leader>"
 let g:CommandTTagIncludeFilenames=1
+let g:Tlist_GainFocus_On_ToggleOpen=1
+let g:Tlist_Use_Right_Window=1
 
 " ----- LaTeX -----
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
