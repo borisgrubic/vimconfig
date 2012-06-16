@@ -46,8 +46,9 @@ endif
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
-"set smartcase		" Do smart case matching
-"set incsearch		" Incremental search
+set smartcase		" Do smart case matching
+set incsearch		" Incremental search
+set hlsearch        " highlight search results
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
@@ -59,19 +60,28 @@ endif
 
 "added by Boris
 " set nowrap
+set nu                                  " display numbers
+set nowrap                              " don't wrap text
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
 set ruler " show cursor position
 
-set incsearch " show match while searching
-set hlsearch  " highlight search results
+set nobackup
+set noswapfile
 
-nmap <silent> <F3> :NERDTreeToggle<CR> 
-                                        " ctrl + n opens NerdTree
-set nu                                  " display numbers
-set nowrap                              " don't wrap text
+nmap <silent> <F3> :NERDTreeToggle<CR>
+
+imap jj <ESC>
+nmap <silent> ,/ :nohlsearch<CR>
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+set pastetoggle=<F2>
 
 set splitbelow " split new horizontal below current
 set splitright " split new vertical right
@@ -81,6 +91,8 @@ set foldmethod=indent " set folding on
 set t_Co=256
 colors jellybeans
 
+let mapleader=","
+let g:EasyMotion_leader_key="<leader>"
 let g:CommandTTagIncludeFilenames=1
 
 " ----- LaTeX -----

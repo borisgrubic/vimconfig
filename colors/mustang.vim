@@ -1,0 +1,1 @@
+/home/boris/.vim/colors/mustang/colors/mustang.vim
