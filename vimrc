@@ -74,6 +74,9 @@ set ruler " show cursor position
 set nobackup
 set noswapfile
 
+set lines=50
+set columns=100
+
 nmap <silent> <F3> :NERDTreeToggle<CR>
 nnoremap <silent> <F4> :TlistToggle<CR>
 
@@ -93,7 +96,7 @@ set splitright " split new vertical right
 set foldmethod=indent " set folding on
 
 set t_Co=256
-colors jellybeans
+colors wombat256
 
 let mapleader=","
 let g:CommandTTagIncludeFilenames=1

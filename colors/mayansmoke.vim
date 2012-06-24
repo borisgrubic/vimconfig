@@ -1,0 +1,1 @@
+mayansmoke/colors/mayansmoke.vim

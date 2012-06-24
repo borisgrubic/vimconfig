@@ -1,0 +1,1 @@
+pyte/colors/pyte.vim
