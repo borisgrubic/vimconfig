@@ -18,3 +18,14 @@ Installed plugins:
     surround
     taglist
     tcomment
+
+Installed colors:
+    dark:
+        desert
+        jellybeans
+        mustang
+        wombat
+        wombat256
+    light:
+        mayansmoke
+        pyte
