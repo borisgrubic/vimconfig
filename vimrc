@@ -93,7 +93,7 @@ set pastetoggle=<F2>
 set splitbelow " split new horizontal below current
 set splitright " split new vertical right
 
-set foldmethod=indent " set folding on
+" set foldmethod=indent " set folding on
 
 set t_Co=256
 colors wombat256
@@ -104,3 +104,29 @@ let g:Tlist_GainFocus_On_ToggleOpen=1
 let g:Tlist_Use_Right_Window=1
 
 filetype plugin indent on
+
+let Tlist_Ctags_Cmd="~/vim/bundle/taglist/"
+
+let g:ctrlp_working_path_mode = ''
+
+set cursorline
+
+nnoremap <silent> <leader>i :JavaImport<cr>
+nnoremap <silent> <leader>d :JavaDocSearch -x declarations<cr>
+nnoremap <silent> <cr> :JavaSearchContext<cr>
+
+set completeopt=longest,menuone
+
+let g:acp_behaviorJavaEclimLength = 2
+function MeetsForJavaEclim(context)
+  return g:acp_behaviorJavaEclimLength >= 0 &&
+        \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
+endfunction
+let g:acp_behavior = {
+    \ 'java': [{
+      \ 'command': "\<c-x>\<c-u>",
+      \ 'completefunc' : 'eclim#java#complete#CodeComplete',
+      \ 'meets'        : 'MeetsForJavaEclim',
+    \ }]
+  \ }
+    
