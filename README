@@ -18,6 +18,12 @@ Installed plugins:
     surround
     taglist
     tcomment
+    L9
+    autocomplpop
+    ctrlp
+    supertab
+    tlib_vim
+    vim-addon-mw-utils
 
 Installed colors:
     dark:
