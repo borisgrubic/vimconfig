@@ -8,7 +8,6 @@ Installing:
     git submodule update
 
 Installed plugins:
-    command-t
     easymotion
     minibufexplorer
     nerdtree
@@ -24,6 +23,7 @@ Installed plugins:
     supertab
     tlib_vim
     vim-addon-mw-utils
+    ctrlp
 
 Installed colors:
     dark:
