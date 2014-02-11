@@ -1,6 +1,6 @@
 Installing:
     cd ~
-    git clone http://github.com/borisgrubic/gitconfig ~/.vim
+    git clone http://github.com/borisgrubic/vimconfig ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
     cd ~/.vim
