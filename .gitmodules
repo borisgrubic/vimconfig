@@ -45,7 +45,7 @@
 	url = https://github.com/tomtom/tlib_vim.git
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
-	url =https://github.com/vim-scripts/vim-addon-mw-utils.git 
+	url = https://github.com/vim-scripts/vim-addon-mw-utils.git 
 [submodule "colors/mayansmoke"]
 	path = colors/mayansmoke
 	url = https://github.com/vim-scripts/mayansmoke.git
