@@ -13,15 +13,15 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "colors/mustang"]
 	path = colors/mustang
 	url = https://github.com/croaker/mustang-vim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/supertab"]
+    path = bundle/supertab
+    url = https://github.com/ervandew/supertab.git
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
 	url = https://github.com/rstacruz/sparkup.git
@@ -43,9 +43,6 @@
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
@@ -57,3 +54,4 @@
 	url = https://github.com/vim-scripts/mayansmoke.git
 [submodule "colors/pyte"]
 	path = colors/pyte
+    url = https://github.com/vim-scripts/pyte.git
