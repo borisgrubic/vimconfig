@@ -12,7 +12,7 @@ runtime! debian.vim
 
 set nocp
 call pathogen#infect()
-call pathogen#helptags()
+silent! call pathogen#helptags()
 
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
@@ -75,7 +75,6 @@ set nobackup
 set noswapfile
 
 set lines=50
-set columns=100
 
 nmap <silent> <F3> :NERDTreeToggle<CR>
 nnoremap <silent> <F4> :TlistToggle<CR>
