@@ -96,7 +96,8 @@ set splitright " split new vertical right
 " set foldmethod=indent " set folding on
 
 set t_Co=256
-colors wombat256
+set background=dark
+colorscheme solarized
 
 let mapleader=","
 let g:CommandTTagIncludeFilenames=1
