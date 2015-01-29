@@ -64,6 +64,7 @@ set nu                                  " display numbers
 set nowrap                              " don't wrap text
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 set wildmode=longest,list,full
@@ -116,16 +117,8 @@ nnoremap <silent> <cr> :JavaSearchContext<cr>
 
 set completeopt=longest,menuone
 
-let g:acp_behaviorJavaEclimLength = 2
-function MeetsForJavaEclim(context)
-  return g:acp_behaviorJavaEclimLength >= 0 &&
-        \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
-endfunction
-let g:acp_behavior = {
-    \ 'java': [{
-      \ 'command': "\<c-x>\<c-u>",
-      \ 'completefunc' : 'eclim#java#complete#CodeComplete',
-      \ 'meets'        : 'MeetsForJavaEclim',
-    \ }]
-  \ }
-    
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
