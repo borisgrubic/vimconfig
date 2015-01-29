@@ -20,18 +20,18 @@ Installed plugins:
     L9
     autocomplpop
     ctrlp
-    supertab
     tlib_vim
     vim-addon-mw-utils
-    ctrlp
 
 Installed colors:
     dark:
+        solarized
         desert
         jellybeans
         mustang
         wombat
         wombat256
     light:
+        solarized
         mayansmoke
         pyte
