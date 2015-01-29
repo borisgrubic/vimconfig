@@ -112,10 +112,6 @@ let g:ctrlp_working_path_mode = ''
 
 set cursorline
 
-nnoremap <silent> <leader>i :JavaImport<cr>
-nnoremap <silent> <leader>d :JavaDocSearch -x declarations<cr>
-nnoremap <silent> <cr> :JavaSearchContext<cr>
-
 set completeopt=longest,menuone
 
 set noerrorbells visualbell t_vb=
